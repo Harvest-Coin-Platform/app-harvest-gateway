@@ -9,6 +9,8 @@ spring:
             uri: ${WEB_LOGIC_URI:http://localhost:8081}
           - id: telegram-bot-service
             uri: ${TELEGRAM_BOT_URI:http://localhost:8082}
+          - id: auth-service
+            uri: ${AUTH_URI:http://localhost:8083}
 
 server:
   port: 8080

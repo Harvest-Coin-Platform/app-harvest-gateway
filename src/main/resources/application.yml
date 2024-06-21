@@ -1,0 +1,10 @@
+spring:
+  application:
+        name: app-harvest-gateway
+  cloud:
+    gateway:
+      mvc:
+        routes:
+
+server:
+  port: 8080

@@ -5,6 +5,8 @@ spring:
     gateway:
       mvc:
         routes:
+          - id: web-logic-service
+            uri: ${WEB_LOGIC_URI:http://localhost:8081}
 
 server:
   port: 8080

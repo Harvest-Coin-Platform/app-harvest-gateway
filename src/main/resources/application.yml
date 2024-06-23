@@ -5,8 +5,8 @@ spring:
     gateway:
       mvc:
         routes:
-          - id: web-logic-service
-            uri: ${WEB_LOGIC_URI:http://localhost:8081}
+          - id: web-api-service
+            uri: ${WEB_API_URI:http://localhost:8081}
           - id: telegram-bot-service
             uri: ${TELEGRAM_BOT_URI:http://localhost:8082}
           - id: auth-service

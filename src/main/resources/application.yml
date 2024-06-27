@@ -7,10 +7,16 @@ spring:
         routes:
           - id: web-api-service
             uri: ${WEB_API_URI:http://localhost:8081}
+            predicates:
+              - Path=/graphql/**
           - id: telegram-bot-service
             uri: ${TELEGRAM_BOT_URI:http://localhost:8082}
+            predicates:
+              - Path=/telegram/**
           - id: auth-service
             uri: ${AUTH_URI:http://localhost:8083}
+            predicates:
+              - Path=/auth/**
 
 server:
   port: 8080
